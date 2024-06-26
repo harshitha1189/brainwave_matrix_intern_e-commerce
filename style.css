@@ -1,0 +1,305 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    
+
+}
+.logo img{
+    max-width: 180px;
+    height:auto
+}
+
+
+header{
+    position: fixed;
+    width:100%;
+    top:0;
+    right:0;
+    z-index:1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color:#780101;
+   
+}
+
+.nav-menu{
+    display: flex;
+}
+.nav-menu a{
+    color: white;
+    font-size: 15px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-menu a:hover{
+    color: rgb(4, 73, 4);
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: rgb(4, 73, 4);
+}
+section{
+    padding: 5% 10%;
+}
+#menu-icon{
+    color: white;
+    z-index: 10001;
+    cursor: pointer;
+}
+.mainhome {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./images/covrpagenew.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.main-text h1{
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin:6px 0 10px;
+}
+.main-text p{
+    color:#173f37;
+    padding: 5px 5px;
+}
+.main-btn{
+    color: #141212;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid ;
+    padding: 12px 25px ;
+    transition: all .42s ease;
+}
+.main-btn:hover{
+    background-color:  #780101;
+    color: #F1F8E8;
+}
+.main-btn i{
+    vertical-align: middle;
+}
+.down{
+    position: absolute;
+
+}
+.down{
+    color: black;
+    font-size: 30px;
+    
+    border-radius: 50%;
+    padding: 12px 12px;
+
+}
+.down:hover{
+    color: #780101;
+    transition: all .42s ease;
+}
+header .sticky{
+    background-color: #173f37;
+    padding: 20px 10%;
+    box-shadow: 0px 0px 10px rgb(4, 73, 4);
+}
+.center-text h2{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.center-text span{
+    color: #780101;
+}
+
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,auto));
+    gap:2rem;
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img {
+    width: 300px; /* Set your desired width */
+    height: 300px; /* Set your desired height */
+    object-fit: cover; /* Ensures that images cover the given dimensions without distortion */
+    transition: all .40s; /* Smooth transition */
+   
+}
+
+    .row img:hover{
+        transform: scale(0.9);
+    }
+
+    .like{
+        position: absolute;
+        right:0;
+        font-size: 20px;
+    }
+    .like:hover{
+        color: red;
+
+    }
+    .rating{
+        color:rgb(220, 162, 15);
+        font-size:18px
+    }
+    .price h4{
+        text-transform: capitalize;
+font-size: 18px;
+font-weight: 500;
+    }
+    .price p{
+        font-size: 16px;
+        color: #780101;
+        font-weight: 600;
+    }
+    .client-reviews{
+
+background-color: #780101;
+
+    }
+    .reviews{ 
+        color: #F1F8E8;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Add padding to each review */
+}
+    
+    .reviews img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 10px; 
+    }
+    .reviews h3{
+        color: #F1F8E8;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+    }
+  
+    .reviews img {
+        width: 100px; /* Set your desired width */
+        height: 100px; /* Set your desired height */
+        object-fit: cover; /* Ensures that the entire image is visible within the circle */
+        border-radius: 50%; /* Makes the image appear as a circle */
+        padding: 10px; /* Adds padding around the circle */
+        
+    }
+    
+    .reviews p{
+
+        text-align: center;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .icons i{
+        color:#141212
+    }
+    .end{
+        color:black;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(160px,auto));
+        gap:3rem;
+    }
+  
+    .nav-link {
+        color: #000000; /* Replace with your desired color */
+    }
+    .cart-section {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background: white;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .cart-section.active {
+        display: block;
+    }
+
+    .cart-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .cart-item {
+        margin-bottom: 10px;
+    }
+
+    #close-cart {
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .liked {
+        color: red;
+    }
+    @media(max-width:890px){
+        header{
+            padding: 10px 3%;
+            transition: .4s;
+        }
+    }
+
+    @media(max-width:630px){
+        .main-text  h1{
+           font-size:50px;
+            transition: .4s;
+        }
+    }
+    .fa{
+
+        color: red;
+        font-size: 20px;
+        cursor:pointer;
+
+    }
+
+
+
+    
+      
+   
