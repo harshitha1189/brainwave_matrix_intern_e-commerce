@@ -297,6 +297,32 @@ background-color: #780101;
         cursor:pointer;
 
     }
+ @media (max-width: 768px) {
+        .nav-menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: #333;
+            padding: 0;
+        }
+    
+        .nav-menu li {
+            margin: 0;
+            text-align: center;
+            width: 100%;
+        }
+    
+        .nav-icon {
+            display: block;
+        }
+    }
+    
+    .nav-active {
+        display: flex !important;
+    }
 
 
 
