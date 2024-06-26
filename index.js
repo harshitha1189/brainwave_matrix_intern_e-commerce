@@ -3,7 +3,15 @@ window.addEventListener("scroll",function(){
 header.classList.toggle("sticky")
 });
 
-// JavaScript to handle like button click
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.nav-icon');
+    const nav = document.querySelector('.nav-menu');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+    });
+});
 
 
 
